@@ -12,7 +12,7 @@ namespace MiniCommerce.Customer.Domain.Services
         Task<Entities.Customer> GetByName(string name);
         Task<IEnumerable<Entities.Customer>> GetAll();
         Task<Entities.Customer> Post(Entities.Customer entity);
-        Task Delete(Entities.Customer entity);
+        Task Delete(Guid id);
         Task<Entities.Customer> Update(Entities.Customer entity);
     }
 }

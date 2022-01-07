@@ -16,9 +16,9 @@ namespace MiniCommerce.Customer.Domain.Services
             _repository = repository;
         }
 
-        public async Task Delete(Entities.Customer entity)
+        public async Task Delete(Guid id)
         {
-            await _repository.Delete(entity);
+            await _repository.Delete(id);
         }
 
         public async Task<IEnumerable<Entities.Customer>> GetAll()
@@ -43,6 +43,9 @@ namespace MiniCommerce.Customer.Domain.Services
 
         public async Task<Entities.Customer> Update(Entities.Customer entity)
         {
+            if (string.IsNullOrEmpty(entity.Name))
+                throw new Exception();
+
             return await _repository.Update(entity);
         }
     }

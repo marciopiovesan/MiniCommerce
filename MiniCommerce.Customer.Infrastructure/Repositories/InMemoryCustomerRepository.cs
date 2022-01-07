@@ -16,9 +16,10 @@ namespace MiniCommerce.Customer.Infrastructure.Repositories
             _entities = new List<Domain.Entities.Customer>();
         }
 
-        public async Task Delete(Domain.Entities.Customer entity)
+        public async Task Delete(Guid id)
         {
-            await Task.FromResult(_entities.Remove(entity));
+            var customer = await Get(c => c.Id == id);
+            await Task.FromResult(_entities.Remove(customer));
         }
 
         public async Task<Domain.Entities.Customer?> Get(Func<Domain.Entities.Customer, bool> predicate)
@@ -39,8 +40,7 @@ namespace MiniCommerce.Customer.Infrastructure.Repositories
 
         public async Task<Domain.Entities.Customer> Update(Domain.Entities.Customer entity)
         {
-            var oldCustomer = await Get(c => c.Id == entity.Id);
-            await Delete(oldCustomer);
+            await Delete(entity.Id);
             return await Post(entity);
         }
     }

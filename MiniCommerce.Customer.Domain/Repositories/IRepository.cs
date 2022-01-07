@@ -11,7 +11,7 @@ namespace MiniCommerce.Customer.Domain.Repositories
         Task<T?> Get(Func<T, bool> predicate);
         Task<IEnumerable<T>> GetAll();
         Task<T> Post(T entity);
-        Task Delete(T entity);
+        Task Delete(Guid id);
         Task<T> Update(T entity);
     }
 }

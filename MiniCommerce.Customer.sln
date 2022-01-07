@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCommerce.Customer", "MiniCommerce.Customer\MiniCommerce.Customer.csproj", "{489D919C-B35A-4345-993E-25BAAF261341}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniCommerce.Customer", "MiniCommerce.Customer\MiniCommerce.Customer.csproj", "{489D919C-B35A-4345-993E-25BAAF261341}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCommerce.Customer.Domain", "MiniCommerce.Customer.Domain\MiniCommerce.Customer.Domain.csproj", "{8A16E1E3-147D-4470-A03A-B39D79817C02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniCommerce.Customer.Domain", "MiniCommerce.Customer.Domain\MiniCommerce.Customer.Domain.csproj", "{8A16E1E3-147D-4470-A03A-B39D79817C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCommerce.Customer.Infrastructure", "MiniCommerce.Customer.Infrastructure\MiniCommerce.Customer.Infrastructure.csproj", "{8E2364CC-67F0-4E8C-99DB-5E4129079CFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniCommerce.Customer.Infrastructure", "MiniCommerce.Customer.Infrastructure\MiniCommerce.Customer.Infrastructure.csproj", "{8E2364CC-67F0-4E8C-99DB-5E4129079CFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCommerce.Customer.Shared", "MiniCommerce.Customer.Shared\MiniCommerce.Customer.Shared.csproj", "{90160332-3EB5-4FE1-95E6-FAD998A58E0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniCommerce.Customer.Shared", "MiniCommerce.Customer.Shared\MiniCommerce.Customer.Shared.csproj", "{90160332-3EB5-4FE1-95E6-FAD998A58E0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCommerce.Customer.Tests", "MiniCommerce.Customer.Tests\MiniCommerce.Customer.Tests.csproj", "{B8ADF264-0493-4E6B-AFE6-E2DE5E1DF7A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{90160332-3EB5-4FE1-95E6-FAD998A58E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90160332-3EB5-4FE1-95E6-FAD998A58E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90160332-3EB5-4FE1-95E6-FAD998A58E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8ADF264-0493-4E6B-AFE6-E2DE5E1DF7A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8ADF264-0493-4E6B-AFE6-E2DE5E1DF7A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8ADF264-0493-4E6B-AFE6-E2DE5E1DF7A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8ADF264-0493-4E6B-AFE6-E2DE5E1DF7A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
